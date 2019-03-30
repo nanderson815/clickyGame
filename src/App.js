@@ -11,7 +11,28 @@ class App extends Component {
     topScore: 0
   }
 
+  onClickHandler = (clicked, id) => {
+    if (clicked) {
+      let resetDogs = this.state.dogs;
+      resetDogs.forEach(dog => dog.clicked = false);
+      this.setState({
+        score: 0,
+        dogs: resetDogs
+      });
+    } else {
+      let newDogs = this.state.dogs;
+      newDogs.forEach(dog => {
+        if (id === dog.id){
+          dog.clicked = true;
+        }
+      });
+      this.setState({
+        dogs: newDogs,
+        score: this.state.score + 1
+      });
 
+    }
+  }
 
   render() {
     return (
@@ -19,7 +40,7 @@ class App extends Component {
         <Navbar score={this.state.score} topScore={this.state.topScore} />
         <div className="container">
           <div className="row">
-            {this.state.dogs.map((dog) => <Dogs key={dog.id} data={dog} />)}
+            {this.state.dogs.map((dog) => <Dogs key={dog.id} data={dog} click={this.onClickHandler} />)}
           </div>
         </div>
       </div>
