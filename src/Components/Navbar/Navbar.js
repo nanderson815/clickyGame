@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navbar.css';
 
 function Navbar(props) {
     return (
@@ -6,7 +7,7 @@ function Navbar(props) {
             <nav>
                 <div className="nav-wrapper">
                     <div className="container">
-                        <span className="brand-logo">Clicky Game</span>
+                        <h5 className="left">Clicky Game</h5>
                         <ul className="right">
                             <li><h5 href="sass.html">Score: {props.score} | Top Score: {props.topScore}</h5></li>
                         </ul>
