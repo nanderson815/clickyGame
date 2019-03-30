@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Navbar() {
+function Navbar(props) {
     return (
         <div>
             <nav>
@@ -8,7 +8,7 @@ function Navbar() {
                     <div className="container">
                         <span className="brand-logo">Clicky Game</span>
                         <ul className="right">
-                            <li><h5 href="sass.html">Score: | Top Score: </h5></li>
+                            <li><h5 href="sass.html">Score: {props.score} | Top Score: {props.topScore}</h5></li>
                         </ul>
                     </div>
                 </div>
