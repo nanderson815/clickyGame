@@ -1,0 +1,14 @@
+
+.dogCard {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 5px;
+    position: relative;
+}
+
+.dogImg {
+    height: 200px;
+    width: auto;
+}
