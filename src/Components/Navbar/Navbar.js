@@ -5,7 +5,7 @@ function Navbar(props) {
     return (
         <div className="navbar-fixed">
             <nav>
-                <div className="nav-wrapper">
+                <div className="nav-wrapper blue darken-1">
                     <div className="container">
                         <h5 className="left">Clicky Game</h5>
                         <ul className="right">
