@@ -3,6 +3,7 @@ import './App.css';
 import dogsJSON from './dogs.json';
 import Dogs from './Components/Dogs/Dogs';
 import Navbar from './Components/Navbar/Navbar';
+import Header from './Components/Header/Header';
 
 class App extends Component {
   state = {
@@ -39,6 +40,8 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar score={this.state.score} topScore={this.state.topScore} />
+        <Header />
+        <br></br>
         <div className="container">
           <div className="row">
             {this.state.dogs.sort((a, b) => 0.5 - Math.random())
