@@ -2,15 +2,12 @@
     height: 225px;
     overflow: hidden;
 }
+
+.card-image{
+    margin-left: -25%;
+}
 .dogImg {
     height: auto;
-    width: 102%;
+    width: 100%;
     min-width: 450px !important;
-    margin: 0px -50px;
 }
-
-.dogCard {
-    position: relative;
-    overflow: hidden;
-}
-

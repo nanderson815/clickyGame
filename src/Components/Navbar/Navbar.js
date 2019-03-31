@@ -3,7 +3,7 @@ import './Navbar.css';
 
 function Navbar(props) {
     return (
-        <div>
+        <div className="navbar-fixed">
             <nav>
                 <div className="nav-wrapper">
                     <div className="container">

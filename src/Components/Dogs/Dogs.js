@@ -6,9 +6,7 @@ function Dogs(props) {
         <div className="col s12 m4 l3">
             <div className="card hoverable" onClick={() => props.click(props.data.clicked, props.data.id)}>
                 <div className="card-image">
-                    <div className="dogCard">
                         <img className="dogImg" alt="#" src={props.data.image}></img>
-                    </div>
                 </div>
             </div>
         </div>
