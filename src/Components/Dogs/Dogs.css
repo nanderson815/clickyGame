@@ -1,9 +1,16 @@
-
 .card {
-    width: 225px;
     height: 225px;
+    overflow: hidden;
 }
 .dogImg {
-    height: 225px;
-    width: auto;
+    height: auto;
+    width: 102%;
+    min-width: 450px !important;
+    margin: 0px -50px;
 }
+
+.dogCard {
+    position: relative;
+    overflow: hidden;
+}
+
